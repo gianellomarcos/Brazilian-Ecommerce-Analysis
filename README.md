@@ -2,13 +2,13 @@
 
 
 
-## 📌 Resumen del Proyecto
+## Resumen del Proyecto
 
 Este proyecto forma parte de mi portafolio de análisis de datos, enfocado en el uso de **Python** para resolver problemas de negocio reales. El objetivo es analizar el conjunto de datos de Olist (el mayor marketplace de Brasil) para entender el ciclo comercial, el desempeño logístico y cómo la eficiencia en las entregas impacta directamente en la satisfacción del cliente (Review Score).
 
 
 
-## 🛠️ Herramientas Utilizadas
+## Herramientas Utilizadas
 
 * **Jupyter Lab:** Entorno de desarrollo para el análisis interactivo.
   
@@ -18,7 +18,7 @@ Este proyecto forma parte de mi portafolio de análisis de datos, enfocado en el
 
 
 
-## 🧹 Procesamiento y Limpieza de Datos
+## Procesamiento y Limpieza de Datos
 
 Para garantizar la integridad de los insights, realicé las siguientes transformaciones en el dataset:
 
@@ -30,7 +30,7 @@ Para garantizar la integridad de los insights, realicé las siguientes transform
 
 
 
-## 📊 Visualización y Hallazgos Clave
+## Visualización y Hallazgos Clave
 
 
 
@@ -58,7 +58,7 @@ Para garantizar la integridad de los insights, realicé las siguientes transform
 
 
 
-## 💡 Análisis de Correlación y Conclusiones
+## Análisis de Correlación y Conclusiones
 
 Realicé un análisis de correlación para medir el impacto en la experiencia del usuario:
 * **Resultado:** Se identificó una correlación negativa de -0.30 entre el tiempo de entrega y el puntaje de satisfacción (`review_score`).
