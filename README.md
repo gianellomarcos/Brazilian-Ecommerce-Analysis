@@ -1,71 +1,76 @@
-# Análisis de Performance Comercial y Logística - E-Commerce (Olist Brasil) 📦
+# Análisis de Performance Comercial y Logística - E-Commerce (Olist Brasil)
 
+Análisis de datos de un marketplace brasileño para evaluar el desempeño comercial, la logística de entregas y su relación con la satisfacción del cliente.
+Herramientas: Python - Pandas - NumPy - Matplotlib - Seaborn - Jupyter Lab
 
+---
 
-## Resumen del Proyecto
+## Objetivo
 
-Este proyecto forma parte de mi portafolio de análisis de datos, enfocado en el uso de **Python** para resolver problemas de negocio reales. El objetivo es analizar el conjunto de datos de Olist (el mayor marketplace de Brasil) para entender el ciclo comercial, el desempeño logístico y cómo la eficiencia en las entregas impacta directamente en la satisfacción del cliente (Review Score).
+Analizar el comportamiento comercial y logístico de Olist para identificar patrones en las ventas, categorías de productos y tiempos de entrega, evaluando cómo el desempeño logístico se relaciona con la satisfacción del cliente.
 
+---
 
+## Proceso
 
-## Herramientas Utilizadas
+Dataset Olist → Python → Limpieza y transformación → Análisis → Visualización → Insights
 
-* **Jupyter Lab:** Entorno de desarrollo para el análisis interactivo.
-  
-* **Python (Pandas & Numpy):** Limpieza, manipulación de datos relacionales y creación de métricas de negocio.
-  
-* **Matplotlib & Seaborn:** Creación de visualizaciones estadísticas y tendencias.
+- Integración y manipulación de datos.
+- Conversión y estandarización de fechas.
+- Tratamiento de valores nulos.
+- Creación de métricas de negocio.
+- Análisis de ventas y categorías.
+- Análisis del desempeño logístico.
+- Análisis de correlación entre entregas y satisfacción.
+- Visualización de resultados.
 
+---
 
+## Análisis y Visualizaciones
 
-## Procesamiento y Limpieza de Datos
-
-Para garantizar la integridad de los insights, realicé las siguientes transformaciones en el dataset:
-
-* **Estandarización de Fechas:** Conversión de múltiples columnas (compra, aprobación, entrega) al formato `datetime` para cálculos temporales precisos.
-  
-* **Manejo de Nombres de Categoría:** Tratamiento de valores nulos en categorías de productos, asignándoles la etiqueta `not_defined` para no perder registros de ventas.
-  
-* **Manejo de Métricas (KPIs):** Creación de la métrica `delivery_time_days` (tiempo real de entrega) y `delivery_delta_days` (diferencia contra la promesa de entrega).
-
-
-
-## Visualización y Hallazgos Clave
-
-
-
-### 1. Evolución Mensual de Ventas (Revenue)
+### 1. Evolución Mensual de Ventas
 
 ![Tendencia de Ventas](img/ventas_mensual.png)
 
-* **Insight:** El volumen de ingresos muestra una tendencia de crecimiento constante mes a mes, con una pequeña caída en el final del periodo analizado.
+Se analizó la evolución mensual de los ingresos para identificar tendencias y variaciones durante el periodo estudiado.
 
+Insight: Los ingresos presentan una tendencia general de crecimiento durante gran parte del periodo analizado, con una disminución hacia el final.
 
+---
 
 ### 2. Top 10 Categorías por Volumen de Pedidos
 
 ![Top Categorías](img/categorias_pedidos.png)
 
-* **Insight:** Las categorías de **Beleza & Saúde** y **Cama, Mesa & Banho** son los más pedidos del marketplace.
+Se analizaron las categorías con mayor volumen de pedidos para identificar los principales productos demandados.
 
-
-
-### 3. Distribución de Tiempos de Entrega y Outliers
-
-![Outliers Logísticos](img/distribucion_tiempos.png)
-
-* **Insight:** El análisis de distribución reveló la presencia de **outliers críticos** con tiempos de entrega que superan los meses, lo que representa un riesgo para la fidelización de clientes.
-
-
-
-## Análisis de Correlación y Conclusiones
-
-Realicé un análisis de correlación para medir el impacto en la experiencia del usuario:
-* **Resultado:** Se identificó una correlación negativa de -0.30 entre el tiempo de entrega y el puntaje de satisfacción (`review_score`).
-* **Conclusión:** A medida que aumentan los días de entrega, la calificación del cliente disminuye.
-* **Recomendación:** Para el sector de Banca Empresa, es importante mejorar la entrega final de los servicios y reducir los casos fuera de lo común en la logística, ya que esto ayuda a aumentar la satisfacción de los clientes.
-
+Insight: **Beleza & Saúde** y **Cama, Mesa & Banho** se encuentran entre las categorías con mayor cantidad de pedidos.
 
 ---
 
-*Proyecto creado por Gianello Marcos como parte del portafolio de Análisis de Datos.*
+### 3. Distribución de Tiempos de Entrega
+
+![Outliers Logísticos](img/distribucion_tiempos.png)
+
+Se analizó la distribución de los tiempos reales de entrega para identificar comportamientos atípicos.
+
+Insight: Se identificaron casos extremos con tiempos de entrega considerablemente superiores al comportamiento habitual, representando posibles problemas operativos.
+
+---
+
+## Principales hallazgos
+
+Ventas
+Se observó una tendencia general de crecimiento en los ingresos durante gran parte del periodo analizado.
+
+Categorías
+Las categorías **Beleza & Saúde** y **Cama, Mesa & Banho** destacan por su volumen de pedidos.
+
+Logística
+Se identificaron outliers con tiempos de entrega considerablemente elevados, que pueden representar oportunidades de mejora en la operación logística.
+
+Satisfacción del cliente
+Se encontró una correlación negativa de aproximadamente **-0.30** entre el tiempo de entrega y el `review_score`. Esto indica que los mayores tiempos de entrega tienden a asociarse con menores niveles de satisfacción.
+
+---
+
