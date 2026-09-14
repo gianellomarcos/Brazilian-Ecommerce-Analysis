@@ -60,17 +60,16 @@ Insight: Se identificaron casos extremos con tiempos de entrega considerablement
 
 ## Principales hallazgos
 
-Ventas
+Ventas:
 Se observó una tendencia general de crecimiento en los ingresos durante gran parte del periodo analizado.
 
-Categorías
+Categorías:
 Las categorías **Beleza & Saúde** y **Cama, Mesa & Banho** destacan por su volumen de pedidos.
 
-Logística
+Logística:
 Se identificaron outliers con tiempos de entrega considerablemente elevados, que pueden representar oportunidades de mejora en la operación logística.
 
-Satisfacción del cliente
+Satisfacción del cliente:
 Se encontró una correlación negativa de aproximadamente **-0.30** entre el tiempo de entrega y el `review_score`. Esto indica que los mayores tiempos de entrega tienden a asociarse con menores niveles de satisfacción.
 
 ---
-
